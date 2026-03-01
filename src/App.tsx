@@ -1,34 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Link, Routes, Route } from 'react-router-dom';
+import Aboutme from './components/Aboutme';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
+
+      <Sidebar>
+        <Menu>
+          <MenuItem component={<Link to="/" />}>About Me</MenuItem>
+          <MenuItem component={<Link to="/projects" />}>Projects</MenuItem>
+          <MenuItem component={<Link to="/resume" />}>Resume</MenuItem>
+          <MenuItem component={<Link to="/contact" />}>Contact</MenuItem>
+        </Menu>
+      </Sidebar>
+
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Routes>
+          <Route path="/" element={<Aboutme />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
