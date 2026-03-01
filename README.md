@@ -1,3 +1,15 @@
+# Welcome to my Portfolio!
+
+# Tech Stack
+
+| Components | Technology            |
+|:----------:|:---------------------:|
+| Build Tool | Vite                  |
+| Framework  | React + TypeScript    |
+| API        | EmailJS               |
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
