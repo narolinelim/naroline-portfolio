@@ -1,6 +1,4 @@
 import './App.css'
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { Link, Routes, Route } from 'react-router-dom';
 import Aboutme from './components/Aboutme';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -11,26 +9,27 @@ function App() {
 
   return (
     <div>
+      <nav className="flex justify-between px-8 py-4 z-50 sticky top-0 bg-transparent">
+        <a href="#aboutme-section" className="text-xl font-bold">Naroline Lim</a>
+        <div className="flex space-x-10">
+          <a href="#aboutme-section">About Me</a>
+          <a href="#project-section">Projects</a>
+          <a href="#resume-section">Resume</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+      </nav>
 
-      <Sidebar>
-        <Menu>
-          <MenuItem component={<Link to="/" />}>About Me</MenuItem>
-          <MenuItem component={<Link to="/projects" />}>Projects</MenuItem>
-          <MenuItem component={<Link to="/resume" />}>Resume</MenuItem>
-          <MenuItem component={<Link to="/contact" />}>Contact</MenuItem>
-        </Menu>
-      </Sidebar>
+      <Aboutme />
+      <Projects />
+      <Resume />
+      <Contact />
 
-      <div>
-        <Routes>
-          <Route path="/" element={<Aboutme />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+
     </div>
-  )
-}
+
+  
+
+  );
+};
 
 export default App
