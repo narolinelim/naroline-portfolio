@@ -4,6 +4,7 @@ const FadeUp = batch(Fade(), Move());
 
 function Projects() {
     return (
+        
         <div id="project-section">
             <ScrollContainer>
                 <ScrollPage>
