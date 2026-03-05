@@ -3,8 +3,7 @@ import { ScrollContainer, Animator, ScrollPage, batch, Fade, FadeOut, FadeIn, Mo
 const FadeUp = batch(Fade(), Move());
 
 function Projects() {
-    return (
-        
+    return (     
         <div id="project-section">
             <ScrollContainer>
                 <ScrollPage>
@@ -12,7 +11,7 @@ function Projects() {
                         <Animator animation={FadeUp}>
                             <div>
                                 <Animator animation={Fade()}>
-                                    <h1>Projects.</h1>
+                                  <h1>Projects.</h1>
                                 </Animator>
                             </div>
                         </Animator>
