@@ -14,13 +14,13 @@ function App() {
       <nav className="flex justify-between px-10 py-4 z-50 sticky top-0 bg-transparent items-center">
         <a href="#main-section" className="text-2xl font-bold">Naroline Lim 😊</a>
         <div className="flex flex-row space-x-10 items-center">
-          <div className="border-2 border-none bg-black rounded-xl py-3 px-5 text-white justify-center items-center">
+          <div className="border-2 border-none bg-black rounded-4xl py-3 px-5 text-white justify-center items-center">
             <a href={ResumePDF} download="Naroline Lim's Resume">Download Resume</a>
           </div>
           <div className="flex space-x-10 border-2 border-none rounded-4xl py-5 px-10 bg-gray-80 backdrop-blur-xl shadow-lg">
             <a href="#aboutme-section">About Me</a>
+            <a href="#resume-section">Experience</a>
             <a href="#project-section">Projects</a>
-            <a href="#resume-section">Resume</a>
             <a href="#contact-section">Contact</a>
           </div>
         </div>
@@ -28,8 +28,8 @@ function App() {
 
       <Main />
       <AboutMe />
-      <Projects />
       <Resume />
+      <Projects />
       <Contact />
 
 

@@ -12,7 +12,7 @@ function Resume() {
                         <Animator animation={FadeUp}>
                             <div>
                                 <Animator animation={Fade()}>
-                                    <h1>Resume.</h1>
+                                    <h1>Experience.</h1>
                                 </Animator>
                             </div>
                         </Animator>
