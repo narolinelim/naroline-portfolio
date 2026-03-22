@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <nav className="flex justify-between px-10 py-4 z-50 sticky top-0 bg-transparent items-center">
-        <a href="#main-section" className="text-2xl font-bold">Naroline Lim 😊</a>
+        <a href="#main-section" className="text-2xl font-bold">Naroline Lim 🤔</a>
         <div className="flex flex-row space-x-10 items-center">
           <div className="border-2 border-none bg-black rounded-4xl py-3 px-5 text-white justify-center items-center">
             <a href={ResumePDF} download="Naroline Lim's Resume">Download Resume</a>

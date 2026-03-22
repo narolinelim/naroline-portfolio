@@ -10,8 +10,8 @@ function Contact() {
         <ScrollPage>
           <div className="flex justify-center items-center h-screen">
             <Animator animation={FadeUp}>
-              <div className="flex flex-row space-x-10 items-center justify-items-center">
-                <h1>Contact Me!</h1>
+              <div className="flex flex-col items-center justify-items-center">
+                <h1 className="mb-5">Contact Me 😊</h1>
                 <ContactCard />
               </div>
             </Animator>

@@ -22,7 +22,7 @@ function TechnicalSkill() {
 
   return (
     <div className="max-w-4xl mb-5">
-      <h1 className="mb-5">My Technical Skills.</h1>
+      <h1 className="mb-5">My Technical Skills...</h1>
 
       <div className="flex flex-row flex-wrap gap-3 justify-center">
         <SkillWidget icon={htmlIcon} name="HTML"/>

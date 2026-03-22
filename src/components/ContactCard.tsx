@@ -1,4 +1,4 @@
-import { useReducer, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 function ContactCard() {
@@ -22,13 +22,13 @@ function ContactCard() {
   };
 
   return (
-    <div className="border-1 border-gray-300 rounded-4xl p-5">
-      <div className="flex flex-col w-100">
+    <div className="border-1 border-gray-300 rounded-4xl p-5 backdrop-blur-xl shadow-lg">
+      <div className="flex flex-col w-150">
         <form ref={formRef} onSubmit={handleSubmit}>
           <label className="flex flex-col">
             Name
             <input 
-              className="border-1" 
+              className="border-1 mt-2 mb-2 border-gray-300 rounded-xl p-2" 
               name="user_name" 
               type="text"
               placeholder="Enter your name..."/>
@@ -36,21 +36,20 @@ function ContactCard() {
           <label className="flex flex-col">
             Email
             <input 
-              className="border-1" 
+              className="border-1 mt-2 mb-2 border-gray-300 rounded-xl p-2" 
               name="user_email" 
               type="text"
               placeholder="Enter your email..."/>
           </label>
           <label className="flex flex-col">
             Message
-            <input 
-              className="border-1" 
+            <textarea 
+              className="border-1 h-50 mt-2 mb-2 border-gray-300 rounded-xl p-2 resize-none align-top" 
               name="user_message" 
-              type="text"
               placeholder="Enter your message..."/>
           </label>
           <button 
-            className="border-1"
+            className="border-1 content-center w-150 mt-5 border-gray-300 rounded-3xl text-white bg-black"
             type="submit">
               Send
           </button>
