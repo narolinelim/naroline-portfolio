@@ -16,7 +16,7 @@ function App() {
     <div>
 
       <aside className="fixed flex flex-col h-screen justify-center z-50">
-        <div className="flex flex-col left-0 w-20 m-8 items-center gap-8 border-2 border-none rounded-4xl bg-gray-80 backdrop-blur-xl shadow-lg">
+        <div className="flex flex-col left-0 w-20 m-8 items-center gap-6 border-2 border-none rounded-4xl bg-gray-80 backdrop-blur-xl shadow-lg">
           <a href="https://www.linkedin.com/in/narolinelim" target="_blank">
             <img src={linkedinIcon} className="h-10 w-10 mx-auto mt-5"/>
           </a>

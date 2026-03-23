@@ -28,22 +28,23 @@ function ContactCard() {
           <label className="flex flex-col">
             Name
             <input 
+              onKeyDown={(e) => e.key === " " && e.stopPropagation()}
               className="border-1 mt-2 mb-2 border-gray-300 rounded-xl p-2" 
               name="user_name" 
-              type="text"
               placeholder="Enter your name..."/>
           </label>
           <label className="flex flex-col">
             Email
             <input 
+              onKeyDown={(e) => e.key === " " && e.stopPropagation()}
               className="border-1 mt-2 mb-2 border-gray-300 rounded-xl p-2" 
               name="user_email" 
-              type="text"
               placeholder="Enter your email..."/>
           </label>
           <label className="flex flex-col">
             Message
             <textarea 
+              onKeyDown={(e) => e.key === " " && e.stopPropagation()}
               className="border-1 h-50 mt-2 mb-2 border-gray-300 rounded-xl p-2 resize-none align-top" 
               name="user_message" 
               placeholder="Enter your message..."/>

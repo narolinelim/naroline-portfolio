@@ -1,4 +1,3 @@
-import React from 'react';
 import SkillWidget from './SkillWidget';
 import htmlIcon from '../assets/html-5.png';
 import cssIcon from '../assets/css-3.png';
@@ -17,6 +16,8 @@ import mysqlIcon from '../assets/mysql.png';
 import shinyIcon from '../assets/shiny.png';
 import flutterIcon from '../assets/flutter.png';
 import dockerIcon from '../assets/docker-icon.png';
+import haskellIcon from '../assets/haskell.png';
+import prologIcon from '../assets/prolog.png';
 
 function TechnicalSkill() {
 
@@ -33,6 +34,8 @@ function TechnicalSkill() {
         <SkillWidget icon={cIcon} name="C"/>
         <SkillWidget icon={jsIcon} name="JavaScript"/>
         <SkillWidget icon={tsIcon} name="TypeScript"/>
+        <SkillWidget icon={haskellIcon} name="Haskell"/>
+        <SkillWidget icon={prologIcon} name="Prolog"/>
         <SkillWidget icon={reactIcon} name="React"/>
         <SkillWidget icon={expressIcon} name="ExpressJS"/>
         <SkillWidget icon={tailwindIcon} name="TailwindCSS"/>
