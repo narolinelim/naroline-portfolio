@@ -19,7 +19,7 @@ function Main() {
               <div className="flex flex-row items-center space-x-20">
                 <Animator animation={batch(Fade(), MoveOut(-1000, 0))}>
                   <h1 className="text-2xl">Naroline Lim</h1>
-                  <p>In Pursuit Of Goofiness.</p>
+                  <p>In Pursuit Of A Job...</p>
                 </Animator>
                 
                 <Animator animation={MoveOut(1000, 0)}>

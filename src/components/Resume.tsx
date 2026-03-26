@@ -21,9 +21,26 @@ function Resume() {
         <ScrollPage>
           <div className="flex justify-center items-center h-screen">
             <Animator animation={FadeUp}>
-              <div className="w-300">
+              <div className="flex flex-col items-center justify-items-center w-500 gap-10">
+                <h1>Experience</h1>
                 <Animator animation={Fade()}>
                   <Timeline position="alternate">
+
+                    <TimelineItem>
+                      <TimelineSeparator>
+                        <TimelineConnector sx={{ bgcolor: 'blue'}} />
+                        <TimelineDot>
+                          <HotelIcon />
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h5" component="span">
+                          To be continued...
+                        </Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+
                     <TimelineItem>
                       <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'blue'}} />
@@ -40,6 +57,7 @@ function Resume() {
                         <Typography>Built a budget forecasting web app with Shiny</Typography>
                       </TimelineContent>
                     </TimelineItem>
+
                   </Timeline>
                 </Animator>
               </div>
